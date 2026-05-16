@@ -1,4 +1,4 @@
-#mainsubheading{
+/* #mainsubheading{
     text-align: center;
 }
 #mainheading{
@@ -26,8 +26,7 @@ img{
     height: 150px;
     display: flex;
     border-radius: 100px;
-    /* float: right;
-    justify-content: left; */
+
 }
 .footersection{
     display: flex;
@@ -40,7 +39,7 @@ img{
     
 }
 .footersection h2{
-    /* font-size: 20px; */
+   
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -53,4 +52,104 @@ img{
 .footersection div{
     width: 30%;
     gap: 50px;
+} */
+
+
+#mainsubheading{
+    text-align: center;
+}
+
+#mainheading{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+/* MENU SECTION */
+.main1{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap; /* IMPORTANT for responsiveness */
+    padding: 20px;
+}
+
+/* MENU CARD */
+.menu1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 15px;
+}
+
+/* IMAGE */
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* FOOTER SECTION */
+.footersection{
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    flex-wrap: wrap; /* IMPORTANT */
+    margin-top: 20px;
+}
+
+.footersection div{
+    width: 250px;
+}
+
+.footersection h2{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footersection p{
+    margin: 5px 0;
+}
+
+.footersection p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px){
+
+    #mainheading{
+        font-size: 32px;
+    }
+
+    .main1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu1{
+        width: 90%;
+    }
+
+    img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .footersection{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footersection div{
+        width: 90%;
+    }
 }
